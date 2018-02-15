@@ -1,0 +1,449 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		79ACB71920325ACD0035ADF5 /* Captura de pantalla 2018-02-09 a las 23.11.49.png in Resources */ = {isa = PBXBuildFile; fileRef = 79ACB71820325ACD0035ADF5 /* Captura de pantalla 2018-02-09 a las 23.11.49.png */; };
+		79F89A79202F84D100C7F16A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79F89A78202F84D100C7F16A /* AppDelegate.swift */; };
+		79F89A7B202F84D100C7F16A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79F89A7A202F84D100C7F16A /* ViewController.swift */; };
+		79F89A7E202F84D200C7F16A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 79F89A7C202F84D200C7F16A /* Main.storyboard */; };
+		79F89A80202F84D200C7F16A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 79F89A7F202F84D200C7F16A /* Assets.xcassets */; };
+		79F89A83202F84D200C7F16A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 79F89A81202F84D200C7F16A /* LaunchScreen.storyboard */; };
+		79F89A8E202F84D200C7F16A /* iotaAuthenticationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79F89A8D202F84D200C7F16A /* iotaAuthenticationTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		79F89A8A202F84D200C7F16A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 79F89A6D202F84D100C7F16A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 79F89A74202F84D100C7F16A;
+			remoteInfo = iotaAuthentication;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		79ACB71820325ACD0035ADF5 /* Captura de pantalla 2018-02-09 a las 23.11.49.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Captura de pantalla 2018-02-09 a las 23.11.49.png"; sourceTree = "<group>"; };
+		79F89A75202F84D100C7F16A /* iotaAuthentication.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iotaAuthentication.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		79F89A78202F84D100C7F16A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		79F89A7A202F84D100C7F16A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		79F89A7D202F84D200C7F16A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		79F89A7F202F84D200C7F16A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		79F89A82202F84D200C7F16A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		79F89A84202F84D200C7F16A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		79F89A89202F84D200C7F16A /* iotaAuthenticationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iotaAuthenticationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		79F89A8D202F84D200C7F16A /* iotaAuthenticationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iotaAuthenticationTests.swift; sourceTree = "<group>"; };
+		79F89A8F202F84D200C7F16A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		79F89A72202F84D100C7F16A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		79F89A86202F84D200C7F16A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		79F89A6C202F84D100C7F16A = {
+			isa = PBXGroup;
+			children = (
+				79ACB71820325ACD0035ADF5 /* Captura de pantalla 2018-02-09 a las 23.11.49.png */,
+				79F89A77202F84D100C7F16A /* iotaAuthentication */,
+				79F89A8C202F84D200C7F16A /* iotaAuthenticationTests */,
+				79F89A76202F84D100C7F16A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		79F89A76202F84D100C7F16A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				79F89A75202F84D100C7F16A /* iotaAuthentication.app */,
+				79F89A89202F84D200C7F16A /* iotaAuthenticationTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		79F89A77202F84D100C7F16A /* iotaAuthentication */ = {
+			isa = PBXGroup;
+			children = (
+				79F89A78202F84D100C7F16A /* AppDelegate.swift */,
+				79F89A7A202F84D100C7F16A /* ViewController.swift */,
+				79F89A7C202F84D200C7F16A /* Main.storyboard */,
+				79F89A7F202F84D200C7F16A /* Assets.xcassets */,
+				79F89A81202F84D200C7F16A /* LaunchScreen.storyboard */,
+				79F89A84202F84D200C7F16A /* Info.plist */,
+			);
+			path = iotaAuthentication;
+			sourceTree = "<group>";
+		};
+		79F89A8C202F84D200C7F16A /* iotaAuthenticationTests */ = {
+			isa = PBXGroup;
+			children = (
+				79F89A8D202F84D200C7F16A /* iotaAuthenticationTests.swift */,
+				79F89A8F202F84D200C7F16A /* Info.plist */,
+			);
+			path = iotaAuthenticationTests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		79F89A74202F84D100C7F16A /* iotaAuthentication */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 79F89A92202F84D200C7F16A /* Build configuration list for PBXNativeTarget "iotaAuthentication" */;
+			buildPhases = (
+				79F89A71202F84D100C7F16A /* Sources */,
+				79F89A72202F84D100C7F16A /* Frameworks */,
+				79F89A73202F84D100C7F16A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = iotaAuthentication;
+			productName = iotaAuthentication;
+			productReference = 79F89A75202F84D100C7F16A /* iotaAuthentication.app */;
+			productType = "com.apple.product-type.application";
+		};
+		79F89A88202F84D200C7F16A /* iotaAuthenticationTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 79F89A95202F84D200C7F16A /* Build configuration list for PBXNativeTarget "iotaAuthenticationTests" */;
+			buildPhases = (
+				79F89A85202F84D200C7F16A /* Sources */,
+				79F89A86202F84D200C7F16A /* Frameworks */,
+				79F89A87202F84D200C7F16A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				79F89A8B202F84D200C7F16A /* PBXTargetDependency */,
+			);
+			name = iotaAuthenticationTests;
+			productName = iotaAuthenticationTests;
+			productReference = 79F89A89202F84D200C7F16A /* iotaAuthenticationTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		79F89A6D202F84D100C7F16A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = Iciar;
+				TargetAttributes = {
+					79F89A74202F84D100C7F16A = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					79F89A88202F84D200C7F16A = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 79F89A74202F84D100C7F16A;
+					};
+				};
+			};
+			buildConfigurationList = 79F89A70202F84D100C7F16A /* Build configuration list for PBXProject "iotaAuthentication" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 79F89A6C202F84D100C7F16A;
+			productRefGroup = 79F89A76202F84D100C7F16A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				79F89A74202F84D100C7F16A /* iotaAuthentication */,
+				79F89A88202F84D200C7F16A /* iotaAuthenticationTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		79F89A73202F84D100C7F16A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				79F89A83202F84D200C7F16A /* LaunchScreen.storyboard in Resources */,
+				79F89A80202F84D200C7F16A /* Assets.xcassets in Resources */,
+				79F89A7E202F84D200C7F16A /* Main.storyboard in Resources */,
+				79ACB71920325ACD0035ADF5 /* Captura de pantalla 2018-02-09 a las 23.11.49.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		79F89A87202F84D200C7F16A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		79F89A71202F84D100C7F16A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				79F89A7B202F84D100C7F16A /* ViewController.swift in Sources */,
+				79F89A79202F84D100C7F16A /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		79F89A85202F84D200C7F16A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				79F89A8E202F84D200C7F16A /* iotaAuthenticationTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		79F89A8B202F84D200C7F16A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 79F89A74202F84D100C7F16A /* iotaAuthentication */;
+			targetProxy = 79F89A8A202F84D200C7F16A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		79F89A7C202F84D200C7F16A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				79F89A7D202F84D200C7F16A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		79F89A81202F84D200C7F16A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				79F89A82202F84D200C7F16A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		79F89A90202F84D200C7F16A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		79F89A91202F84D200C7F16A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		79F89A93202F84D200C7F16A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = iotaAuthentication/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.iotaAuthentication;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		79F89A94202F84D200C7F16A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = iotaAuthentication/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.iotaAuthentication;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		79F89A96202F84D200C7F16A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = iotaAuthenticationTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.iotaAuthenticationTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/iotaAuthentication.app/iotaAuthentication";
+			};
+			name = Debug;
+		};
+		79F89A97202F84D200C7F16A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = iotaAuthenticationTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.iotaAuthenticationTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/iotaAuthentication.app/iotaAuthentication";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		79F89A70202F84D100C7F16A /* Build configuration list for PBXProject "iotaAuthentication" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				79F89A90202F84D200C7F16A /* Debug */,
+				79F89A91202F84D200C7F16A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		79F89A92202F84D200C7F16A /* Build configuration list for PBXNativeTarget "iotaAuthentication" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				79F89A93202F84D200C7F16A /* Debug */,
+				79F89A94202F84D200C7F16A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		79F89A95202F84D200C7F16A /* Build configuration list for PBXNativeTarget "iotaAuthenticationTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				79F89A96202F84D200C7F16A /* Debug */,
+				79F89A97202F84D200C7F16A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 79F89A6D202F84D100C7F16A /* Project object */;
+}
