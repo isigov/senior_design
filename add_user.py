@@ -17,10 +17,13 @@ import signal
 gutiList = []
 currentList = []
 
+#Default phone/provider
+
 phone = "6177752242"
 provider_domain = "tmomail.net"
 iter_count = 1
 
+#Continuously read from pipe, format the line, and decode the structure
 def parse():
 	while 1:
 		time.sleep(0.05)
@@ -37,6 +40,7 @@ def parse():
 				decodePCCH(line)
 	os.close(pipe);
 
+#Send an email via our gmail account
 def sendMail(recipient, content):
     import smtplib
     from email.MIMEMultipart import MIMEMultipart
@@ -60,6 +64,7 @@ def sendMail(recipient, content):
     mailServer.sendmail(gmailUser, recipient, msg.as_string())
     mailServer.close()
 
+#Look for TMSI in the packet, add it to the current list
 def decodePCCH(pcchHex): 
 	pcch = GLOBAL.TYPE['PCCH-Message']
 	buf = pcchHex.decode('hex')
@@ -92,19 +97,23 @@ def main():
 	ASN1.ASN1Obj.CODEC = PER
 	PER.VARIANT= 'U'
 
+	#Parameters for pdsch_ue application, -r 0xfffe filters paging packets, 2140e6 is the downlink frequency of T-Mobile's band 4, -l 1 chooses the closest tower
 	asnc_options = {'-r': '0xfffe', '-f': '2140e6', '-l': '1'}
+	#Hardcoded path for the application
 	command = [os.path.expanduser('~/senior_design/srsLTE/build/lib/examples/pdsch_ue')]
 	for key, value in asnc_options.iteritems():
 		command.extend((key, str(value)))
 	DEVNULL = open(os.devnull, 'wb')
+	#Execute with root privileges
 	p = subprocess.Popen('echo {} | sudo -S {}'.format("iotarulez", " ".join(command)), stdout=DEVNULL, stderr=DEVNULL, shell=True)
 
-
+	#Start parse thread, so main thread is not locked
 	thread = Thread(target = parse)
     thread.start()
 
 	time.sleep(15)
 
+	#Send 5 SMS/emails per round 
 	matches_list = set()
 	for i in range(0, iter_count):
 		print "Round " + str(i + 1) + " of emails."
@@ -120,19 +129,22 @@ def main():
 		time.sleep(4)
 		sendMail(phone + "@" + provider_domain, str(time.time()))
 		time.sleep(45)
+		#See which TMSI numbers show up across multiple runs
 		if i - 1 < 0:
 			matches_list = set(gutiList[i])
 		else:
 			matches_list = matches_list.intersection(gutiList[i])
 
+	#Print the output and have the user choose which TMSI (if any) to add to the database
 	for i in range(0, len(matches_list)):
 		print "{0}: {1}".format(i, matches_list[i])
 
-	num = input("Type the number of a GUTI to add it to the database")
-	device = raw_input("Enter a device name to associate with this GUTI")
-	user = raw_input("Enter a user name to associate with this GUTI")
-	passw = raw_input("Enter a password to associate with this GUTI")
+	num = input("Type the number of a GUTI to add it to the database\n")
+	device = raw_input("Enter a device name to associate with this GUTI\n")
+	user = raw_input("Enter a user name to associate with this GUTI\n")
+	passw = raw_input("Enter a password to associate with this GUTI\n")
 
+	#Insert the data into the local database
 	db = MySQLdb.connect(host="localhost", user="root", passwd="googleme123",db="authenticator")
 	db.autocommit(True)
 	cur = db.cursor()
@@ -142,6 +154,7 @@ def main():
 	m.update(passw)
 	cur.execute("INSERT INTO logins VALUES ('%d', '%s', '%d')" % (int(gutiList[num]), user, m.hexdigest()))
 
+	#Kill the pdsch_ue process
 	os.killpg(os.getpgid(p.pid), signal.SIGTERM)
 	
 	sys.exit()

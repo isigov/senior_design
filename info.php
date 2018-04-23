@@ -2,6 +2,8 @@
 
 //echo $_POST["username"] . "\n" . $_POST["password"];
 
+#Update last authenticated time if credentials match
+
 $mysqli = new mysqli("localhost", "root", "googleme123", "authenticator");
 
 $checkUser = $mysqli->prepare('SELECT * FROM logins WHERE username = ?');

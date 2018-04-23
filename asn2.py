@@ -7,6 +7,7 @@ import MySQLdb
 guti = []
 username = []
 
+##Look for TMSI in the packet
 def decodePCCH(pcchHex, cursor): 
         pcch = GLOBAL.TYPE['PCCH-Message']
         buf = pcchHex.decode('hex')
@@ -17,6 +18,7 @@ def decodePCCH(pcchHex, cursor):
                         num = str(i['ue-Identity'][1]['m-TMSI'][0])
                         if int(num) in guti:
                                 idx = guti.index(int(num))
+                                #If a matching TMSI is found, update the last authenticated time
                                 print "Found %s, updating time..." % username[idx]
                                 cursor.execute("UPDATE users SET last_login = '%d' WHERE id = '%d'" % (int(time.time()), int(num)))
         except:
@@ -37,6 +39,7 @@ for row in cur.fetchall() :
         guti.append(int(row[0]))
         username.append(str(row[1]))
 
+#Continuously read from pipe, format the line, and decode the structure
 while 1:
         time.sleep(0.05)
         try:
