@@ -590,6 +590,7 @@ int main(int argc, char **argv) {
             
   INFO("\nEntering main loop...\n\n", 0);
 
+  //Initalize our named pipe and create a FILE descriptor for it
   mkfifo("/tmp/pdsch_ue", 0666);
   int write_fd = open("/tmp/pdsch_ue", O_WRONLY);
   fcntl(write_fd, F_SETFL, fcntl(write_fd, F_GETFL) | O_NONBLOCK);
@@ -704,16 +705,10 @@ int main(int argc, char **argv) {
             if (n < 0) {
              // fprintf(stderr, "Error decoding UE DL\n");fflush(stdout);
             } else if (n > 0) {
-              //printf("YOLO SWAG");
+		//Send data via named pipe to other decoding script
 		srslte_vec_fprint_byte(write_ptr, data[0], 1+(n-1)/8);
 	        fflush(write_ptr);
-		//int i;
-		//for (i = 0; i < n; i++)
-		//{
-		//    if (i > 0) fprintf(stdout, " ");
-		//    fprintf(stdout, "%02X", data[i]);
-		//}
-		//getchar();
+
               /* Send data if socket active */
               if (prog_args.net_port > 0) {
                 if(sfidx == 1) {
