@@ -4,7 +4,7 @@
 This script provides the user with an ability to isolate the TMSI of a device and automatically create the necessary database entries for a new user. Currently, this script only supports T-Mobile’s band 4, but this can be changed on line 101 to reflect the frequency the user is current using. This script uses a named pipe to read information passed by the pdsch_ue application, but this method could be improved by directly integrating all functionality into the main application. The default MySQL database information on line 148 and the Gmail login on line 49 should both be updated to reflect the correct configuration.
 
 ## *./senior_design/asn2.py*
-This script uses a named pipe to read information passed by the pdsch_ue application and compare it against the database. The default MySQL database information on line 31 should be updated to reflect the correct configuration.
+This script uses a named pipe to read information passed by the pdsch_ue application and compare it against the database. The default MySQL database information on line 31 should be updated to reflect the correct configuration. Any other modes of authentication should follow the *decodePCCH* function model to change a user's authenticated state.
 
 ## *./senior_design/iot.py*
 This script takes a boolean as a parameter and turns our lightbulb on/off. To add different varieties of IOT devices, this script should be modified to include respective SDKs or functionality.
